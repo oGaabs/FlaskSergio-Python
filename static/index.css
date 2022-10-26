@@ -1,0 +1,114 @@
+body, html{
+	margin: 0;
+	padding: 0;
+	background-color: #19181F;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	color: white;
+
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	text-align: center;
+
+	box-sizing: border-box;
+	height: 100vh;
+}
+
+div.container{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	display: flex;
+	align-items: center;;
+	flex-direction: column;
+	width: 100%;
+}
+
+span.title {
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	font-size: 25px;
+}
+
+.descricao {
+	text-align: center;
+	width: 100%;
+	height: 100%;
+
+	font-size: 18px;
+}
+
+h2.buttons-title {
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	font-family: Phantomsans, sans-serif;
+	font-size: 18px;
+}
+
+.buttons-field{
+	background-color: #1E1E26;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	float: center;
+	gap: 3vh;
+	flex-direction: column;
+
+	border:1px solid #222;
+	border-radius: 8px;
+	min-height: 90px;
+	line-height: 90px;
+	margin-right: 20px;
+
+	margin:20px 0 0px 20px;
+	padding:20px;
+
+	width: 30%;
+}
+
+.button {
+	align-items: center;
+	background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+	border: 0;
+	border-radius: 8px;
+	box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+	box-sizing: border-box;
+	color: #FFFFFF;
+	display: flex;
+	font-family: Phantomsans, sans-serif;
+	font-size: 18px;
+	justify-content: center;
+	line-height: 1em;
+	max-width: 100%;
+	min-width: 140px;
+	padding: 3px;
+	text-decoration: none;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	white-space: nowrap;
+	cursor: pointer;
+	transition: all .3s;
+   }
+
+.button:active,
+.button:hover {
+	outline: 0;
+}
+
+.button span {
+	background-color: rgb(5, 6, 45);
+	padding: 16px 24px;
+	border-radius: 6px;
+	width: 100%;
+	height: 100%;
+	transition: 300ms;
+}
+
+.button:active {
+	transform: scale(0.9);
+}
